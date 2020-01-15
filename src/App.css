@@ -1,0 +1,8 @@
+.appBody{
+  border:solid black 1px;
+  height: auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+}

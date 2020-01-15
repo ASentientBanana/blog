@@ -1,0 +1,27 @@
+
+.PostListElement{
+    display: flex;
+    border-bottom:1px black solid ;
+    width: 75%;
+    position: relative;
+    left:10%;
+    margin-top:20px ;
+    padding-bottom: 10px;
+
+}
+img{
+    height: 100px;
+    margin-right: 10px;
+}
+.postList{
+    width: 85vw;
+    margin: 30px auto ;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.postTitle{
+    text-align: center;
+}
