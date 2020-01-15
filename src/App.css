@@ -6,3 +6,25 @@
   margin: 0;
   padding: 0;
 }
+
+.socialContainer{
+  border: 1px solid black;
+  width: 35%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 1%;
+
+}
+.socialList{
+  display: flex;
+  list-style: none;
+  flex-direction:column ;
+text-align: center;
+}
+
+.socialList li{
+  padding: 5px;
+  border-bottom: solid 1px darkgrey;
+  background-color: rgba(169, 169, 169, 0.219);
+
+}

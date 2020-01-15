@@ -5,7 +5,7 @@ export const Social = ()=>{
 
     return(
         <div className="socialContainer">
-            <ul>
+            <ul className='socialList'>
                 <li>RSS feed</li>
                 <li>Facebook</li>
                 <li>Twitter</li>
