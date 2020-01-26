@@ -1,6 +1,8 @@
 .appBody{
   border:solid black 1px;
-  height: auto;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #3e4a61;
 }
 *{
   margin: 0;
@@ -8,23 +10,22 @@
 }
 
 .socialContainer{
-  border: 1px solid black;
-  width: 35%;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  width: 30%;
+  border-radius: 1%;
   margin: auto;
   margin-bottom: 20px;
-  border-radius: 1%;
-
 }
 .socialList{
   display: flex;
   list-style: none;
   flex-direction:column ;
-text-align: center;
+  text-align: center;
 }
 
 .socialList li{
   padding: 5px;
-  border-bottom: solid 1px darkgrey;
-  background-color: rgba(169, 169, 169, 0.219);
+  border-bottom: solid 1px rgba(102, 102, 102, 0.041);
+  background-color: rgba(216, 215, 215, 0.158);
 
 }

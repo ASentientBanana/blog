@@ -1,7 +1,7 @@
 import React from "react";
 import { PostListElement } from "./PostListElement";
-import "../Styles/PostList.css";
-
+import "../../Styles/PostList.css";
+import {Social} from '../Social'
 const POSTS = {
   posts: [
     {
@@ -62,10 +62,13 @@ const POSTS = {
 
 export const PostList = () => {
   return (
+    <div>
     <div className="postList">
       {POSTS['posts'].map((post,index)=>(
           <PostListElement title={index} content={post.content} thumbnail={post.thumbnail} key={index} />
       ))}
+    </div>
+    <Social />
     </div>
   );
 };

@@ -7,7 +7,9 @@
     left:10%;
     margin-top:20px ;
     padding-bottom: 10px;
-
+    color:#1a2639 ;
+    padding-top: 10px;
+    padding-left: 4px;
 }
 img{
     height: 100px;
@@ -16,12 +18,25 @@ img{
 .postList{
     width: 85vw;
     margin: 30px auto ;
-    border: 1px solid rgba(0, 0, 0, 0.075);
-    padding: 20px;
     display: flex;
     flex-direction: column;
     height: auto;
+    background-color: #d9dad7;
+    padding-top: 20px;
 }
 .postTitle{
-    text-align: center;
+    color: #d9dad7;
+}
+.title-container{
+    background-color: #C24D2C;
+    width: 75%;
+    margin-left:10% ;
+    margin-top: 5px;
+    padding-left: 25px;
+}
+
+.PostListElement:hover {
+    border-bottom:2px black solid ;
+
+    cursor: pointer;
 }

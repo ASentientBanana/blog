@@ -2,30 +2,42 @@
     margin:0;
     padding: 0;
 }
-
-
 .navigation{
-    background-color: black;
+    background-color:#D9DAD7;
     width: 85vw;
     height: 50px;
-    border: lightgray solid 1px;
-    color:whitesmoke;
+    color:#1a2639;
     margin: auto;
-    margin-top: 5px;
-    position: relative;
-
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 .navigation ul{
     list-style: none;
+    color:#1A2639;
     display: flex;
     justify-content: space-around;
-    padding-top: 12px;
+    align-items: center;
 }
-.navigation img{
-    z-index: 2;
-    position: relative;
-    top: -16px;
-    margin: 0;
-    padding: 0%;
-    height: 60px;
+.logo-backdrop{
+    background-color: #C24D2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-backdrop h1{
+    color: #D9DAD7;
+}
+
+.nave-lement{
+    cursor: pointer;
+    width: 35%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+    background-color: rgb(231, 231, 231);
 }
