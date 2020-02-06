@@ -12,7 +12,7 @@ color: white;
 margin-bottom: 50px;
 }
 .editor-toolbar{
-    margin-top: 10%;
+    margin-top: 2%;
     background-color:#d9dad7;
     
 }
@@ -24,6 +24,20 @@ margin-bottom: 50px;
     background-color:  #C24D2C;
     border:  #C24D2C solid 1px;
     color:#d9dad7 ;
+    cursor: pointer;
+}
 
+.title-thumbnail-input-wraper{
+    /* border: chartreuse solid 1px; */
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    color:#d9dad7;
+    font-size: 1.23rem;
+}
 
+.title-thumbnail-input-wraper input{
+    width: 30%;
+    border: none;
+    border-radius: 3px;
 }

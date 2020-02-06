@@ -1,5 +1,5 @@
-import React from "react";
-
+import React ,{useRef,useEffect}from "react";
+import marked from 'marked';
 export const PostListElement = ({ thumbnail, content, title }) => {
   const post_options = {
     method: "POST",
@@ -11,17 +11,25 @@ export const PostListElement = ({ thumbnail, content, title }) => {
       content: "HELOOOOOOOOOOOOOOOOO"
     })
   };
-  // const sendPost = fetch()
 
+  const contentRef=useRef()
+  // console.log(contentRef.current)
+
+  useEffect(()=>{
+    contentRef.current.innerHTML += content;
+  },[])
   return (
     <div>
       <div className="title-container">
       <h2 className="postTitle">Post {title}</h2>
       </div>
 
-      <div className="PostListElement">
+      <div className="PostListElement" >
         <img src={thumbnail} alt="" />
-        <p>{content}</p>
+        <div ref={contentRef} className="content-div">
+          
+        </div>
+
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.post-container{
+    width: 86%;
+    height: 100vh;
+    border: white solid 1px;
+    margin:  5% auto;
+    background-color: rgba(245, 245, 245, 0.329);
+}
