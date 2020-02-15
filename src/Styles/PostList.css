@@ -1,42 +1,20 @@
 
-.PostListElement{
-    display: flex;
-    border-bottom:1px black solid ;
-    width: 75%;
-    position: relative;
-    left:10%;
-    margin-top:20px ;
-    padding-bottom: 10px;
-    color:#1a2639 ;
-    padding-top: 10px;
-    padding-left: 4px;
-}
-img{
-    height: 100px;
-    margin-right: 10px;
-}
+
 .postList{
     width: 85vw;
     margin: 30px auto ;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    background-color: #d9dad7;
-    padding-top: 20px;
-}
-.postTitle{
-    color: #d9dad7;
-}
-.title-container{
-    background-color: #C24D2C;
-    width: 75%;
-    margin-left:10% ;
-    margin-top: 5px;
-    padding-left: 25px;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: rgb(241, 241, 241);
 }
 
-.PostListElement:hover {
-    border-bottom:2px black solid ;
-
+.MuiGridListTile-tile {
+    background-color:rgb(18, 165, 214);
+    border: none;
     cursor: pointer;
+    
+}
+
+.MuiGridListTile-tile h2{
+    color: whitesmoke;
 }

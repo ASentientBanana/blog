@@ -1,9 +1,10 @@
 *{
     margin:0;
     padding: 0;
+    
 }
 .navigation{
-    background-color:#D9DAD7;
+    background-color:rgb(216, 216, 216);
     width: 85vw;
     height: 50px;
     color:#1a2639;
@@ -14,19 +15,19 @@
 }
 .navigation ul{
     list-style: none;
-    color:#1A2639;
+    color:black;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .logo-backdrop{
-    background-color: #C24D2C;
+    background-color: rgb(18, 165, 214);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .logo-backdrop h1{
-    color: #D9DAD7;
+    color: white;
 }
 
 .nave-lement{
@@ -39,5 +40,8 @@
 }
 
 li:hover{
-    background-color: rgb(231, 231, 231);
+    background-color: rgba(18, 165, 214, 0.253);
+}
+a{
+    text-decoration: none;
 }

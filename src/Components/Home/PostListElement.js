@@ -1,20 +1,10 @@
 import React ,{useRef,useEffect}from "react";
 import marked from 'marked';
+
+
+
 export const PostListElement = ({ thumbnail, content, title }) => {
-  const post_options = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name: "testPost",
-      content: "HELOOOOOOOOOOOOOOOOO"
-    })
-  };
-
   const contentRef=useRef()
-  // console.log(contentRef.current)
-
   useEffect(()=>{
     contentRef.current.innerHTML += content;
   },[])
