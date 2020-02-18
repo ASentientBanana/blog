@@ -1,20 +1,20 @@
-
-
-.postList{
-    width: 85vw;
-    margin: 30px auto ;
-    /* display: flex;
+.postList {
+  width: 85vw;
+  margin: 30px auto;
+  /* display: flex;
     flex-direction: column; */
-    background-color: rgb(241, 241, 241);
+  background-color: rgb(241, 241, 241);
 }
 
 .MuiGridListTile-tile {
-    background-color:rgb(18, 165, 214);
-    border: none;
-    cursor: pointer;
-    
+  background-color: rgb(18, 165, 214);
+  border: none;
+  cursor: pointer;
 }
 
-.MuiGridListTile-tile h2{
-    color: whitesmoke;
+.MuiGridListTile-tile h2 {
+  color: whitesmoke;
+}
+.link-style  {
+    display:block;
 }

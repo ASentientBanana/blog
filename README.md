@@ -1,4 +1,4 @@
 
 #blog
 
-blog created in react
+#generic blog created in react

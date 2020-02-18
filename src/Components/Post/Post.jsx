@@ -1,38 +1,44 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import "../../Styles/Post.css";
-import { withRouter } from "react-router-dom";
-import Button from "@material-ui/core/Button";
+import FormDialog from "./PostComment/PostComment";
+import Comments from "./Comments/Comments";
+import { CommentContext } from "../../Context/CommentContext";
 
 const Post = ({ match }) => {
-  const [post, setPost] = useState({});
+  const [comments, setComments] = useContext(CommentContext);
+
   const postRef = useRef();
+
   const getPost = async () => {
-    const postres = await fetch(
-      `http://localhost:3003/curentpost/${match.params.post_id}`
-    );
+    let postres;
+    try {
+      postres = await fetch(
+        `http://192.168.0.15:3003/curentpost/${match.params.post_id}`
+      );
+    } catch {
+      postres = await fetch(
+        `http://localhost:3003/curentpost/${match.params.post_id}`
+      );
+    }
     const postdata = await postres.json();
-    console.log(postdata);
-    postRef.current.innerHTML += postdata["post_body"];
+
+    // console.log(postdata)
+    postRef.current.innerHTML += postdata[0]["post_body"];
+    setComments(postdata);
   };
+
   useEffect(() => {
     getPost();
   }, []);
 
   return (
     <div>
-      <div className="post-container" ref={postRef}>
-        <h1>{post["post_body"]}</h1>
+      <div className="post-container">
+        <span ref={postRef}></span>
       </div>
-      <div className='comment-btn'>
-        <Button
-          variant="contained"
-          color="primary"
-          onClick={() => {
-            console.log("WORKS");
-          }}
-        >
-          Add Comment
-        </Button>
+      <div className="comment-btn">
+        <FormDialog postId={match.params.post_id} />
+        <Comments />
       </div>
     </div>
   );
